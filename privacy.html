@@ -22,14 +22,14 @@
 <body><main>
 <p class="brand">fuelwise</p>
 <h1>Privacy policy</h1>
-<p class="muted">Last updated 15 October 2026</p>
+<p class="muted">Last updated 18 October 2026</p>
 <section>
 <h2>In short</h2>
-<p>Fuelwise has no accounts, no servers of its own, no adverts, no analytics and no tracking. Your profile, health details, lists and check-ins stay on your phone. To look products up, Fuelwise asks Open Food Facts, a free public food database, using the barcode or the words you search for.</p>
+<p>Fuelwise has no accounts, no adverts, no analytics and no tracking. Your profile, health details, lists and check-ins stay on your phone. To look a product up, Fuelwise sends its barcode to our own small server in London, which keeps a copy of public product information from Open Food Facts, a free public food database. Searches go to Open Food Facts directly. None of this includes your profile or anything about you.</p>
 </section>
 <section>
 <h2>Who we are</h2>
-<p>Fuelwise is made by an independent developer in the United Kingdom. For anything about privacy, email <a href="mailto:fuelwise.app@outlook.com">fuelwise.app@outlook.com</a>.</p>
+<p>Fuelwise is an independent app made in the United Kingdom. Fuelwise is responsible for your information under UK data protection law. For anything about privacy, email <a href="mailto:fuelwise.app@outlook.com">fuelwise.app@outlook.com</a>.</p>
 </section>
 <section>
 <h2>What stays on your phone</h2>
@@ -44,13 +44,24 @@
 <p>Fuelwise uses your profile on your phone to adjust scores and show warnings. It is never used for advertising and never leaves your phone.</p>
 </section>
 <section>
-<h2>What is sent to look products up</h2>
-<p>To show a product, Fuelwise sends requests to Open Food Facts (openfoodfacts.org):</p>
+<h2>Our product server</h2>
+<p>Fuelwise has one server of its own. It keeps a copy of product information, so products open faster and Open Food Facts is asked less often. Supabase, a US company, runs it for us on servers in London (UK).</p>
 <ul>
-  <li>When you scan or type a barcode: the barcode number.</li>
+  <li>What it receives: only the barcode number of a product you scan, type or open.</li>
+  <li>What it keeps: for each barcode, the public product information from Open Food Facts (refreshed after 30 days), and, for barcodes no database has, a count of how often they were looked up and when. Nothing links a barcode to you or your phone.</li>
+  <li>It never receives your profile, health details, diets, allergies, history, favourites, lists or check-ins. There is no account and no device ID.</li>
+  <li>Like any website, the server sees your phone’s internet (IP) address when it connects. We don’t store it. Supabase keeps technical logs that include it for a short time (currently about a day) to run and protect the service, then deletes them. Supabase’s privacy policy is at <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</li>
+  <li>If the server is unavailable, Fuelwise asks Open Food Facts directly instead.</li>
+</ul>
+</section>
+<section>
+<h2>What is sent to Open Food Facts and USDA</h2>
+<p>To show products, Fuelwise also sends requests to Open Food Facts (<a href="https://openfoodfacts.org">openfoodfacts.org</a>):</p>
+<ul>
   <li>When you search: the words you type.</li>
   <li>To find better alternatives: the product’s categories.</li>
   <li>To show pack photos and read ingredients from them: requests for those photos.</li>
+  <li>When our server doesn’t have a product yet, it asks Open Food Facts for it, so Open Food Facts sees our server rather than your phone. If our server is unavailable, the barcode goes from your phone to Open Food Facts directly.</li>
 </ul>
 <p>For some US barcodes, the barcode is also sent to the US government’s USDA FoodData Central database.</p>
 <p>These requests don’t include your profile or anything that identifies you. Like any website, these services see your internet (IP) address when your phone connects. Their own privacy policies apply: Open Food Facts’ at <a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a>, and USDA’s at <a href="https://www.usda.gov">usda.gov</a>.</p>
@@ -75,7 +86,7 @@
 </section>
 <section>
 <h2>Children</h2>
-<p>Fuelwise doesn’t collect personal data from anyone, including children. A parent can set a child life stage on their own phone; it stays on that phone.</p>
+<p>Fuelwise doesn’t keep personal data about anyone, including children. A parent can set a child life stage on their own phone; it stays on that phone.</p>
 </section>
 <section>
 <h2>Deleting your data</h2>
@@ -85,11 +96,14 @@
   <li>Sign out of Open Food Facts in Me → Open Food Facts account.</li>
   <li>Deleting the app deletes everything Fuelwise saved on your phone.</li>
 </ul>
+<p>Nothing about you is kept on our server, so there is nothing there to delete.</p>
 <p>Anything you shared with Open Food Facts is part of their public database. To change or remove it, use your Open Food Facts account or contact them.</p>
 </section>
 <section>
 <h2>Your rights</h2>
-<p>Fuelwise doesn’t hold personal data about you, so there is nothing for us to give you, correct or delete. If you have a question or a concern, email <a href="mailto:fuelwise.app@outlook.com">fuelwise.app@outlook.com</a>. You can also complain to the Information Commissioner’s Office (<a href="https://ico.org.uk">ico.org.uk</a>).</p>
+<p>Fuelwise doesn’t keep personal data about you. Our server stores barcodes and public product information, not who looked them up, so there is nothing for us to give you, correct or delete.</p>
+<p>Your internet address appears briefly in our server provider’s logs. We rely on “legitimate interests” (running the service and protecting it from misuse) for that, and the logs are deleted automatically.</p>
+<p>If you have a question or a concern, email <a href="mailto:fuelwise.app@outlook.com">fuelwise.app@outlook.com</a>. You can also complain to the Information Commissioner’s Office (<a href="https://ico.org.uk">ico.org.uk</a>).</p>
 </section>
 <section>
 <h2>Not medical advice</h2>
