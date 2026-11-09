@@ -22,7 +22,7 @@
 <body><main>
 <p class="brand">fuelwise</p>
 <h1>Privacy policy</h1>
-<p class="muted">Last updated 29 October 2026</p>
+<p class="muted">Last updated 6 November 2026</p>
 <section>
 <h2>In short</h2>
 <p>Fuelwise has no accounts, no adverts and no tracking, and no analytics beyond six anonymous daily counts you can switch off. Your profile, health details, lists and check-ins stay on your phone. To look a product up, Fuelwise sends its barcode to our own small server in London, which keeps a copy of public product information from Open Food Facts, a free public food database. Searches go to Open Food Facts directly. None of this includes your profile or anything about you.</p>
@@ -40,7 +40,9 @@
   <li>Your food log, daily check-ins and weight, if you enter them.</li>
   <li>Products you add yourself, unless you choose to share them (see below).</li>
   <li>Cut-out product photos, which are made on your phone.</li>
+  <li>Your last few searches, copies of products you’ve opened, what was read from pack photos, and photos you’ve taken in Fuelwise.</li>
 </ul>
+<p>The barcodes in your history and on your lists can be looked up like any other barcode, sometimes several at once, to show their scores and photos, with nothing saying where they came from.</p>
 <p>None of it is included in your iPhone’s iCloud Backup either, so it isn’t copied to Apple and isn’t moved to a new iPhone.</p>
 <p>Fuelwise uses your profile on your phone to adjust scores and show warnings. It is never used for advertising and never leaves your phone.</p>
 </section>
@@ -48,10 +50,10 @@
 <h2>Our product server</h2>
 <p>Fuelwise has one server of its own. It keeps a copy of product information, so products open faster and Open Food Facts is asked less often. Supabase, a US company, runs it for us on servers in London (UK).</p>
 <ul>
-  <li>What it receives: only the barcode number of a product you scan, type or open, and, once a day, the six anonymous counts below.</li>
-  <li>What it keeps: for each barcode, the public product information from Open Food Facts (refreshed after 30 days), and, for barcodes no database has, a count of how often they were looked up and when. Nothing links a barcode to you or your phone.</li>
-  <li>It never receives your profile, health details, diets, allergies, history, favourites, lists or check-ins. There is no account and no device ID.</li>
-  <li>Like any website, the server sees your phone’s internet (IP) address when it connects. We don’t store it. Supabase keeps technical logs that include it for a short time (currently about a day) to run and protect the service, then deletes them. Supabase’s privacy policy is at <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</li>
+  <li>What it receives: only barcode numbers, of a product you scan, type or open, and sometimes of items on your lists, search results or alternatives when Open Food Facts is busy, with nothing saying which; and, once a day, the six anonymous counts below.</li>
+  <li>What it keeps: for each barcode, the public product information from Open Food Facts (refreshed after 30 days, or after a day if it has no ingredient list yet), and, for barcodes no database has, a count of how often they were looked up and when. Nothing we keep links a barcode to you or your phone.</li>
+  <li>It never receives your profile, health details, diets, allergies or check-ins, and nothing says a barcode came from your history, favourites or lists. There is no account and no device ID.</li>
+  <li>Like any website, the server sees your phone’s internet (IP) address when it connects. We don’t store it. Supabase keeps technical logs that include it for a short time (currently about a day) to run and protect the service, then deletes them. Those logs can also show the barcode that was asked for. Supabase’s privacy policy is at <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</li>
   <li>If the server is unavailable, Fuelwise asks Open Food Facts directly instead.</li>
   <li>Usage counts: each day Fuelwise counts on your phone how many times six things happened (scans, products not found, products opened, additive pages opened, finishing the welcome, setting a profile) and sends only those numbers and the date to our server, which adds them to that day’s totals. Nothing identifies you, your phone or what you scanned, and you can switch this off in Me → Privacy.</li>
 </ul>
@@ -61,9 +63,10 @@
 <p>To show products, Fuelwise also sends requests to Open Food Facts (<a href="https://openfoodfacts.org">openfoodfacts.org</a>):</p>
 <ul>
   <li>When you search: the words you type.</li>
-  <li>To find better alternatives: the product’s categories.</li>
-  <li>To show pack photos and read ingredients from them: requests for those photos.</li>
-  <li>When our server doesn’t have a product yet, it asks Open Food Facts for it, so Open Food Facts sees our server rather than your phone. If our server is unavailable, the barcode goes from your phone to Open Food Facts directly.</li>
+  <li>To find better alternatives: the product’s categories and your phone’s country setting. This happens by itself when a product opens.</li>
+  <li>To show search results, alternatives and items in your history and on your lists: batches of barcodes, straight from your phone.</li>
+  <li>To show pack photos and read ingredients from them: requests for those photos, whose addresses include the barcode.</li>
+  <li>When our server doesn’t have a product yet, it asks Open Food Facts for it, so for that one lookup, Open Food Facts sees our server rather than your phone. If our server is unavailable, the barcode goes from your phone to Open Food Facts directly.</li>
 </ul>
 <p>For some US barcodes, the barcode is also sent to the US government’s USDA FoodData Central database.</p>
 <p>These requests don’t include your profile or anything that identifies you. Like any website, these services see your internet (IP) address when your phone connects. Their own privacy policies apply: Open Food Facts’ at <a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a>, and USDA’s at <a href="https://www.usda.gov">usda.gov</a>.</p>
@@ -73,9 +76,9 @@
 <p>Sharing is optional and only happens when you choose it: when you tap a button that says it shares (Share, then confirm; or Matches my pack on an ingredient list read from a pack photo, which says the account it’s sent as); when you take a photo in Bulk add, the screen for adding missing products to Open Food Facts, where each photo is shared as you take it, and the ingredient list when you tap Send; or when you take a label photo after agreeing to have label photos read straight away (below). To share, you sign in with an Open Food Facts account:</p>
 <ul>
   <li>Your Open Food Facts username and password are stored in your phone’s secure Keychain and only ever sent to Open Food Facts.</li>
-  <li>What you share is sent to Open Food Facts and becomes public in their database, credited to your Open Food Facts username, under their open licences: a label photo, an ingredient list, and, when the listing lacks them, the product’s name, brand and the nutrition figures read off your photo (you can switch the nutrition off before sharing). If Open Food Facts can’t be reached when you tap Share, it waits on your phone and goes the next time the app can reach it.</li>
+  <li>What you share is sent to Open Food Facts and becomes public in their database, credited to your Open Food Facts username, under their open licences: a label or pack photo, an ingredient list, and, when the listing lacks them, the product’s name, brand and the nutrition figures read off your photo (you can switch the nutrition off before sharing). If Open Food Facts can’t be reached, Fuelwise tells you. A list you confirmed with Matches my pack waits on your phone and goes the next time the app can reach it; photos and other shares don’t wait.</li>
   <li>To read a label photo you’ve taken, Fuelwise can share it with Open Food Facts, whose text recognition (Google Cloud Vision) reads it. Fuelwise explains this the first time and asks: if you agree, label photos you take after that are shared and read straight away; if not, a photo is only sent when you tap the button to read it. You can turn reading straight away off in Me → Open Food Facts account. Live Text reads the label on your phone instead, without sending anything.</li>
-  <li>Photos are sent without location data.</li>
+  <li>Fuelwise saves every photo as a new picture before sending it, which leaves location data out. If it can’t, the photo isn’t sent.</li>
 </ul>
 </section>
 <section>
@@ -84,7 +87,7 @@
 </section>
 <section>
 <h2>Links</h2>
-<p>Study and source links open in a browser inside the app. The websites you open there have their own privacy policies.</p>
+<p>Study and source links open in a browser inside the app. The websites you open there have their own privacy policies. If you share a product or a list from the app, it goes where you send it.</p>
 </section>
 <section>
 <h2>Children</h2>
@@ -96,7 +99,7 @@
   <li>Clear your history in the History tab, and remove items from your lists.</li>
   <li>Change or clear your profile in Me → Your profile.</li>
   <li>Sign out of Open Food Facts in Me → Open Food Facts account.</li>
-  <li>Deleting the app deletes everything Fuelwise saved on your phone.</li>
+  <li>Deleting the app deletes what Fuelwise saved on your phone. Your iPhone can keep your Open Food Facts sign-in in its Keychain after the app is deleted, so sign out first.</li>
 </ul>
 <p>Nothing about you is kept on our server, so there is nothing there to delete.</p>
 <p>Anything you shared with Open Food Facts is part of their public database. To change or remove it, use your Open Food Facts account or contact them.</p>
